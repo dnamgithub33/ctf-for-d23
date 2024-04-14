@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<title> Create an account </title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+	body {
+ 	 background-image: url(https://github.com/dnamgithub33/test2/blob/main/tuyen_tv_isp.JPG?raw=true);
+	 background-repeat: no-repeat;
+ 	 background-attachment: fixed;  
+ 	 background-size: cover;
+	}
+    *{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'Roboto, sans-serif;
+}
+section{
+	position:relative;
+	width: 100%;
+	height: 100vh;
+	display:flex;
+}
+section .img-bg{
+	position:relative;
+	width:50%;
+	height: 100%;
+}
+section .img-bg img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+section .information{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:50%;
+	height:100%;
+}
+section .information .form{
+	width:50%;
+}
+
+section .information .form .input-form{
+	margin-bottom: 20px;
+}
+section .information .form .input-form{
+     margin-bottom: 20px;
+ }
+section .information .form .input-form span{
+     font-size: 16px;
+     margin-bottom: 5px;
+     display: inline-block;
+     color: #607db8;
+     letter-spacing: 1px;
+      }
+section .information .form .input-form input{
+     width: 100%;
+     padding: 10px 20px;
+     outline: none;
+     border: 1px solid #607d8b;
+     font-size: 16px;
+     letter-spacing: 1px;
+     color: #607d8b;
+     background: transparent;
+     border-radius: 30px;
+     }
+ /*section .information .form .input-form input[type="submit"]{
+     background: #dfb47d;
+     color: rgb(0, 0, 0);
+     outline: none;
+     border: none;
+     font-weight: 500;
+     cursor: pointer;
+     box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+               0 8px 8px rgba(0,0,0,0.12),
+               0 16px 16px rgba(0,0,0,0.12);
+ }*/
+ section .information .form .input-form button[type="submit"]{
+	font-weight: bold;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	color: #000000;
+	display: border-box;
+	padding: 10px 40px 10px 40px;
+	position: relative;
+	border: 3px solid #607d8b;
+	border-radius: 20px;
+}
+section .information .form .input-form input[type="submit"]:hover{
+     background: #dfb47d;
+ }
+ section .information .form .remember{
+     margin-bottom: 10px;
+     color: #607d8b;
+     font-size: 14px;
+ }
+ section .information .form .input-form p{
+     color: #607d8b;
+ }
+section .information .form .input-form p a{
+     color: #dfb47d;
+ }
+@media(max-width: 768px){
+	section .img-gb{
+		position: absolute;
+		top:0 ;
+		left: 0;	
+		width: 100%;
+		height: 100%;
+	}
+	section .information{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:100%;
+		height: 100%;
+		z-index: 1;
+	}
+	/*section .information .form{
+		width:100%;
+		padding: 40px;
+		background: rgba(255, 255, 255, 0.9);
+		margin: 50px;
+	}*/
+}
+    </style>
+</head>
+<section>
+	<div class="information">
+		<div class="form">
+		<form action="/signup" method="POST">
+			<div class="input-form">
+				<span><b> Username </b></span>
+				<input type="text" name="username">
+			</div>
+			<div class="input-form">
+				<span><b> Password </b></span>
+				<input type="password" name="password">
+			</div>
+			<div class="input-form">
+				<span><b> Retype your password </b></span>
+				<input type="password" name="repassword">
+			</div>
+			<div class="input-form">
+				<button type="submit" name="submit">
+					Sign up
+				</button>
+			</div>
+		</form>
+		</div>
+	</div>
+</section>
+<body>
+    
+</body>
+</html>
